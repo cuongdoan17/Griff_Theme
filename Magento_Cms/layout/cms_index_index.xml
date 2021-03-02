@@ -5,13 +5,20 @@
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="page.wrapper">
             <referenceContainer name="main">
                 <container name="main.container" htmlClass="main-container" htmlTag="div" before="main.content">
-                    <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Cms::banner.phtml"/>
-                    <block class="Magento\Framework\View\Element\Template" name="post" template="Magento_Cms::post.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="banner"
+                           template="Magento_Cms::banner.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="post"
+                           template="Magento_Cms::post.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="service"
+                           template="Magento_Cms::service.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="form.create"
+                           template="Magento_Cms::create_form.phtml"/>
                 </container>
             </referenceContainer>
         </referenceContainer>
