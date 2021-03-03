@@ -1,0 +1,33 @@
+<div class="footer-left">
+    <div class="logo">
+        <?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Header\Logo")->setTemplate("Magento_Theme::html/header/logo.phtml")->toHtml(); ?>
+    </div>
+    <div class="social-link">
+        <a href="<?php echo strip_tags($this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('link_linkedin')
+            ->toHtml()) ?>">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="<?php echo strip_tags($this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('link_facebook')
+            ->toHtml()) ?>">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="<?php echo strip_tags($this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('link_twitter')
+            ->toHtml()) ?>">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="<?php echo strip_tags($this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('link_instagram')
+            ->toHtml()) ?>">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <a href="tel:888-553-9351" class="telephone">888-553-9351</a>
+    <a href="mailto:orders@griffithfoodsconnect.com" class="griff-email">orders@griffithfoodsconnect.com</a>
+</div>

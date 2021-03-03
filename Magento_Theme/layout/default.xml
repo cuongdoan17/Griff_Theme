@@ -9,6 +9,8 @@
     <body>
         <move element="logo" destination="header.panel" before="-"/>
         <move element="store.menu" destination="header.panel" before="top.links"/>
+        <move element="form.subscribe" destination="footer-up" after="-"/>
+        <move element="copyright" destination="footer-down" before="-"/>
         <referenceBlock name="navigation.sections" remove="true"/>
         <referenceBlock name="top.links" >
             <referenceBlock name="wish-list-link" remove="true"/>
@@ -19,5 +21,23 @@
             <referenceBlock name="header" remove="true"/>
             <block class="Magento\Framework\View\Element\Template" name="contact_us" template="Magento_Theme::contact-us.phtml"/>
         </referenceBlock>
+        <referenceContainer name="footer-container">
+            <referenceContainer name="footer">
+                <container name="footer-up" htmlClass="footer-up" htmlTag="div" before="copyright">
+                    <block class="Magento\Framework\View\Element\Template" name="footer.left"
+                           template="Magento_Theme::footer_left.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="footer.middle"
+                           template="Magento_Theme::footer_middle.phtml"/>
+                    <referenceBlock name="store_switcher" remove="true"/>
+                    <referenceBlock name="footer_links" remove="true"/>
+                </container>
+                <container name="footer-down" htmlClass="footer-down" htmlTag="div">
+                    <block class="Magento\Framework\View\Element\Template" name="power.by"
+                           template="Magento_Theme::power_by.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="footer.links"
+                           template="Magento_Theme::footer_links.phtml"/>
+                </container>
+            </referenceContainer>
+        </referenceContainer>
     </body>
 </page>

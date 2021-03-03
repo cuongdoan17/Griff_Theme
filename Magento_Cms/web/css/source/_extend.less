@@ -1,6 +1,6 @@
 h3 {
   color: #1B6F44;
-  font-size: 21px;
+  font-size: 27px;
   font-weight: 700;
 }
 
@@ -20,15 +20,23 @@ h3 {
 
   .banner-text {
     position: absolute;
-    top: 0;
-    width: 40%;
-    height: 700px;
-    background-color: #ffffff;
-
+    top: 26%;
+    left: 15%;
+    width: 30%;
     h2 {
       color: #1B6F44;
       font-size: 40px;
       font-weight: 700;
+    }
+    button {
+      background-color: #1B6F44;
+      width: 122px;
+      height: 40px;
+      border: none;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -173,6 +181,111 @@ h3 {
 
     input[type="submit"] {
       margin-bottom: 45px;
+    }
+  }
+}
+.page-footer {
+  background-color: #1B7045;
+}
+.footer.content {
+  border-top: none;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  .footer-middle {
+    display: grid;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .footer-left {
+    display: grid;
+    .logo {
+      width: 220px;
+      height: 55px;
+      object-fit: contain;
+      margin: 0;
+      margin-left: 20px;
+    }
+    .social-link {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      a {
+        border: 1px solid #569C7E;
+        padding: 4px;
+        margin-right: 18px;
+        border-radius: 5px;
+        color: #73AC93;
+      }
+    }
+    a.telephone {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    a.griff-email {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+  .block.newsletter {
+    .title {
+      display: block;
+      font-weight: 700;
+      line-height: 1.1;
+      font-style: italic;
+      color: white;
+      strong {
+        font-size: 1.6rem;
+      }
+    }
+    input {
+      background-color: #1B7045;
+    }
+  }
+}
+
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .copyright {
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+    font-size: 1.3rem;
+  }
+  .powered-by {
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+    font-size: 1.3rem;
+  }
+  .footer-links {
+    display: flex;
+    a {
+      font-weight: 700;
+      line-height: 1.1;
+      color: white;
+      font-size: 1.3rem;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    a:last-child {
+      margin-right: 0;
     }
   }
 }
